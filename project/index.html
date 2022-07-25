@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MovieSearch!</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">
+        <div class="container">
+          <p>Movie<span>Search!</span></p>
+        </div>
+      </div>
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title here ..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+          />
+
+          <div class="search-list" id="search-list">
+            <!--div class="search-list-item">
+              <div class="search-item-thumbnail">
+                <img src="nope-poster-full-1646152921325.jpg" />
+              </div>
+              <div class="search-item-info">
+                <h3>NOPE</h3>
+                <p>2022</p>
+              </div>
+            </div> !-->
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid">
+            <div class="movie-poster">
+              <img
+                src="nope-poster-full-1646152921325.jpg"
+                alt="Movie Poster"
+              />
+            </div>
+            <div class="movie-info">
+              <h3 class="movie-title">NOPE</h3>
+              <ul class="movie-misc-info">
+                <li class="year">Year: 2022</li>
+                <li class="rating">Rated: R</li>
+                <li class="release">Released: 22 July 2022</li>
+              </ul>
+              <p class="genre">
+                <b>Genre: </b>Horror, Mystery, Sci-Fi, Thriller
+              </p>
+              <p class="writer"><b>Written By: </b>Jordan Peele</p>
+              <p class="actors">
+                <b>Starring: </b>Daniel Kaluuya, Keke Palmer, Brandon Perea,
+                Steven Yeun
+              </p>
+              <p class="plot">
+                <b>Plot: </b>After random objects falling from the sky result in
+                the death of their father, ranch-owning siblings OJ and Emerald
+                Haywood attempt to capture video evidence of an unidentified
+                flying object with the help of tech salesman Angel Torres and
+                documentarian Antlers Holst.
+              </p>
+              <p class="language"><b>Language: </b>English</p>
+              <p class="awards">
+                <b><i class="fas fa-award"></i></b>HCA Award for Most
+                Anticipated Film
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js" async defer></script>
+  </body>
+</html>
